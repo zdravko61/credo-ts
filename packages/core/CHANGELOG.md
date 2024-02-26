@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/openwallet-foundation/credo-ts/compare/v0.4.2...v0.5.0) (2024-02-26)
+
+### Bug Fixes
+
+- abandon proof protocol if presentation fails ([#1610](https://github.com/openwallet-foundation/credo-ts/issues/1610)) ([b2ba7c7](https://github.com/openwallet-foundation/credo-ts/commit/b2ba7c7197139e780cbb95eed77dc0a2ad3b3210))
+- **core:** allow string for did document controller ([#1644](https://github.com/openwallet-foundation/credo-ts/issues/1644)) ([ed874ce](https://github.com/openwallet-foundation/credo-ts/commit/ed874ce38ed1a1a0f01b12958e5b14823661b06a))
+- did:peer:2 creation and parsing ([#1752](https://github.com/openwallet-foundation/credo-ts/issues/1752)) ([7c60918](https://github.com/openwallet-foundation/credo-ts/commit/7c609183b2da16f2a698646ac39b03c2ab44318e))
+- jsonld document loader node 18 ([#1454](https://github.com/openwallet-foundation/credo-ts/issues/1454)) ([3656d49](https://github.com/openwallet-foundation/credo-ts/commit/3656d4902fb832e5e75142b1846074d4f39c11a2))
+- **present-proof:** isolated tests ([#1696](https://github.com/openwallet-foundation/credo-ts/issues/1696)) ([1d33377](https://github.com/openwallet-foundation/credo-ts/commit/1d333770dcc9e261446b43b5f4cd5626fa7ac4a7))
+- properly print key class ([#1684](https://github.com/openwallet-foundation/credo-ts/issues/1684)) ([99b801d](https://github.com/openwallet-foundation/credo-ts/commit/99b801dfb6edcd3b7baaa8108ad361be4e05ff67))
+- remove check for DifPresentationExchangeService dependency ([#1702](https://github.com/openwallet-foundation/credo-ts/issues/1702)) ([93d9d8b](https://github.com/openwallet-foundation/credo-ts/commit/93d9d8bb3a93e47197a2c01998807523d783b0bf))
+- some log messages ([#1636](https://github.com/openwallet-foundation/credo-ts/issues/1636)) ([d40bfd1](https://github.com/openwallet-foundation/credo-ts/commit/d40bfd1b96001870a3a1553cb9d6faaefe71e364))
+- support all minor versions handshake ([#1711](https://github.com/openwallet-foundation/credo-ts/issues/1711)) ([40063e0](https://github.com/openwallet-foundation/credo-ts/commit/40063e06ff6afc139516459e81e85b36195985ca))
+
+### Features
+
+- add goal codes to v2 protocols ([#1739](https://github.com/openwallet-foundation/credo-ts/issues/1739)) ([c5c5b85](https://github.com/openwallet-foundation/credo-ts/commit/c5c5b850f27e66f7a2e39acd5fc14267babee208))
+- add Multikey as supported vm type ([#1720](https://github.com/openwallet-foundation/credo-ts/issues/1720)) ([5562cb1](https://github.com/openwallet-foundation/credo-ts/commit/5562cb1751643eee16b4bf3304a5178a394a7f15))
+- add secp256k1 diddoc and verification method ([#1736](https://github.com/openwallet-foundation/credo-ts/issues/1736)) ([f245386](https://github.com/openwallet-foundation/credo-ts/commit/f245386eef2e0daad7a5c948df29625f60a020ea))
+- add some default contexts ([#1741](https://github.com/openwallet-foundation/credo-ts/issues/1741)) ([0bec03c](https://github.com/openwallet-foundation/credo-ts/commit/0bec03c3b97590a1484e8b803401569998655b87))
+- add support for key type k256 ([#1722](https://github.com/openwallet-foundation/credo-ts/issues/1722)) ([22d5bff](https://github.com/openwallet-foundation/credo-ts/commit/22d5bffc939f6644f324f6ddba4c8269212e9dc4))
+- anoncreds w3c migration ([#1744](https://github.com/openwallet-foundation/credo-ts/issues/1744)) ([d7c2bbb](https://github.com/openwallet-foundation/credo-ts/commit/d7c2bbb4fde57cdacbbf1ed40c6bd1423f7ab015))
+- **anoncreds:** issue revocable credentials ([#1427](https://github.com/openwallet-foundation/credo-ts/issues/1427)) ([c59ad59](https://github.com/openwallet-foundation/credo-ts/commit/c59ad59fbe63b6d3760d19030e0f95fb2ea8488a))
+- did rotate ([#1699](https://github.com/openwallet-foundation/credo-ts/issues/1699)) ([adc7d4e](https://github.com/openwallet-foundation/credo-ts/commit/adc7d4ecfea9be5f707ab7b50d19dbe7690c6d25))
+- did:peer:2 and did:peer:4 support in DID Exchange ([#1550](https://github.com/openwallet-foundation/credo-ts/issues/1550)) ([edf493d](https://github.com/openwallet-foundation/credo-ts/commit/edf493dd7e707543af5bbdbf6daba2b02c74158d))
+- **indy-vdr:** register revocation registry definitions and status list ([#1693](https://github.com/openwallet-foundation/credo-ts/issues/1693)) ([ee34fe7](https://github.com/openwallet-foundation/credo-ts/commit/ee34fe71780a0787db96e28575eeedce3b4704bd))
+- **mesage-pickup:** option for awaiting completion ([#1755](https://github.com/openwallet-foundation/credo-ts/issues/1755)) ([faa390f](https://github.com/openwallet-foundation/credo-ts/commit/faa390f2e2bb438596b5d9e3a69e1442f551ff1e))
+- optional backup on storage migration ([#1745](https://github.com/openwallet-foundation/credo-ts/issues/1745)) ([81ff63c](https://github.com/openwallet-foundation/credo-ts/commit/81ff63ccf7c71eccf342899d298a780d66045534))
+- **present-proof:** add support for aries RFC 510 ([#1676](https://github.com/openwallet-foundation/credo-ts/issues/1676)) ([40c9bb6](https://github.com/openwallet-foundation/credo-ts/commit/40c9bb6e9efe6cceb62c79d34366edf77ba84b0d))
+- **presentation-exchange:** added PresentationExchangeService ([#1672](https://github.com/openwallet-foundation/credo-ts/issues/1672)) ([50db5c7](https://github.com/openwallet-foundation/credo-ts/commit/50db5c7d207130b80e38ce5d94afb9e3b96f2fb1))
+- **sd-jwt-vc:** Module for Issuer, Holder and verifier ([#1607](https://github.com/openwallet-foundation/credo-ts/issues/1607)) ([ec3182d](https://github.com/openwallet-foundation/credo-ts/commit/ec3182d9934319b761649edb4c80ede2dd46dbd4))
+- support short legacy connectionless invitations ([#1705](https://github.com/openwallet-foundation/credo-ts/issues/1705)) ([34a6c9f](https://github.com/openwallet-foundation/credo-ts/commit/34a6c9f185d7b177956e5e2c5d79408e52915136))
+- **tenants:** support for tenant storage migration ([#1747](https://github.com/openwallet-foundation/credo-ts/issues/1747)) ([12c617e](https://github.com/openwallet-foundation/credo-ts/commit/12c617efb45d20fda8965b9b4da24c92e975c9a2))
+
 ## [0.4.2](https://github.com/hyperledger/aries-framework-javascript/compare/v0.4.1...v0.4.2) (2023-10-05)
 
 ### Bug Fixes
