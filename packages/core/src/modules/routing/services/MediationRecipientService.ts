@@ -149,7 +149,7 @@ export class MediationRecipientService {
     agentContext: AgentContext,
     mediationRecord: MediationRecord,
     updates: { recipientKey: Key; action: KeylistUpdateAction }[],
-    timeoutMs = 15000 // TODO: this should be a configurable value in agent config
+    timeoutMs = 25000 // TODO: this should be a configurable value in agent config
   ): Promise<MediationRecord> {
     const connection = await this.connectionService.getById(agentContext, mediationRecord.connectionId)
 
